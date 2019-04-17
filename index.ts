@@ -5,11 +5,13 @@ import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 class IdSearch extends PolymerElement {
   static get template() {
     return html`
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <style type="text/css">
 </style>
 <div class="globalNavSearch">
   <form on-submit="handleSubmit">
     <input type="text" placeholder="Accession Number" name="aNum" on-submit="handleSubmit" id="aNum"/>
+    <button type="submit"><i class="fab fa-search"></i></button>  
   </form>
 </div>
 selection: [[selection]]

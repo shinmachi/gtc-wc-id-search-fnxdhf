@@ -1,3 +1,6 @@
 h1, h2 {
   font-family: Lato;
 }
+input[type=submit] {
+  font-family: FontAwesome;
+}
