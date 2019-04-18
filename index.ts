@@ -1,4 +1,6 @@
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+// import 'fa-icon-polymer/fa-icon-css.js'
+// import 'fa-icon-polymer/fa-icon.js'
 //import '@polymer/iron-ajax/iron-ajax.js';
 //<iron-ajax auto="" url="https://test.sparqlist.glyconavi.org/api/GlycoSample_Disease_List_chart" handle-as="json" last-response="{{diseaseresultdata}}"></iron-ajax>
 
@@ -10,8 +12,7 @@ class IdSearch extends PolymerElement {
 </style>
 <div class="globalNavSearch">
   <form on-submit="handleSubmit">
-    <input type="text" placeholder="Accession Number" name="aNum" on-submit="handleSubmit" id="aNum"/>
-    <button type="submit"><i class="fab fa-search"></i></button>  
+    <input type="text" placeholder="Accession Number" name="aNum" on-submit="handleSubmit" id="aNum"/>    <input type="submit" value="submit"/>
   </form>
 </div>
 selection: [[selection]]
